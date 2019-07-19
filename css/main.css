@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 200px auto;
+  width: 320px;
+  height: 480px;
+  background: url("../images/game_bg.jpg") no-repeat;
+  position: relative;
+}
+
+.container .score {
+  position: absolute;
+  left: 60px;
+  top: 5px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.container .progress {
+  width: 180px;
+  height: 16px;
+  position: absolute;
+  left: 63px;
+  top: 66px;
+  background: url("../images/progress.png") no-repeat;
+}
+
+.container .start-btn {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background: red;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .rules {
+  width: 100%;
+  height: 20px;
+  background: #ccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.container .rules-mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.rules-mask ul {
+  list-style: none;
+  text-align: center;
+  color: white;
+}
+
+.rules-mask ul > li:first-child {
+  margin-top: 40%;
+}
+
+.rules-mask ul > li {
+  margin-top: 10px;
+}
+
+.rules-mask ul > li:last-child {
+  color: red;
+  cursor: pointer;
+}
+
+.container .game-over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  display: none;
+}
+
+.game-over h3 {
+  margin-top: 60%;
+  font-size: 30px;
+  color: red;
+  text-shadow: 3px 3px 0 white;
+}
+
+.game-over .restart-btn {
+  margin-top: 74px;
+  width: 100px;
+  height: 50px;
+  background: skyblue;
+  border-radius: 20px;
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
